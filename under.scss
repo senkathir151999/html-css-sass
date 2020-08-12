@@ -1483,6 +1483,14 @@ color: $secondary-color;
     @include mobile {
         flex-direction: column;
         padding-left: 50px;
+        .location {
+            padding-bottom: 20px;
+        }
+        img {
+            vertical-align: middle;
+            
+        }
+
         
     }
     @include mobile-landscape {
@@ -1510,7 +1518,7 @@ color: $secondary-color;
           font-size: 8px;
 line-height: 12px;
 padding-left: 10px;
-vertical-align: middle;
+
       }
         font-style: normal;
 font-weight: bold;
@@ -1528,9 +1536,7 @@ color: $secondary-color;
           font-size: 8px;
 line-height: 12px;
 margin-top: 0px;
-vertical-align: middle;
-
-        }
+     }
         font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -1548,7 +1554,6 @@ color: $secondary-color;
 line-height: 12px;
 padding-left: 10px;
 
-vertical-align: middle;
         }
         font-style: normal;
         font-weight: bold;
@@ -1619,7 +1624,9 @@ input:focus {
 .description {
 width: 100%;
 margin-top: 50px;
- padding-bottom: 100px;
+ padding-top: 20px;
+
+ padding-left: 20px;
 background: $input-bg-color;
 border: 1px solid $border-color;
 box-sizing: border-box;
@@ -1642,6 +1649,7 @@ letter-spacing: 0.1px;
 /* Background */
 
 color: #18171D;
+
 }
 .content-form-btn {
    
