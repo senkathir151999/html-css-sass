@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/css/under.css" rel="stylesheet">
+    
 </head>
 <body>
     
   
-          
-   
+
     <section class="container-one">
         <header>
            <a href="#"><div class="logo"><img src="/Rectangle 4.svg"  alt="logo" >
             </div></a>
             
              <nav>
-                 <ul class="nav-link">
+                 <ul  id="menu" class="nav-link">
                      <li><a href="#" class="home">Home</a></li>
                      <li>
                         <a href="#" class="product" >Product</a>
@@ -31,8 +31,8 @@
                         <a href="#" class="contact">Contact</a></li>
                  </ul>
              </nav>
-                
-             
+          
+            
            
             <div class="header-form">
     
@@ -42,16 +42,22 @@
                 <div class="login">
                     <button><a href="#">Login</a></button>
                 </div>
-                <div class="toggle"><span class="bar">
+                <div class="toggle" onClick="toggleMobileMenu();">
                     <span class="bars-1">
                     </span>
                     <span class="bars-2">
                     </span>
                        <span class="bars-3">
                     </span>
-                    </span>
                     
+                    	<script>
+		function toggleMobileMenu(){
+			document.querySelector('#menu').classList.toggle('active')
+			document.querySelector('.toggle').classList.toggle('active')
+		}
+	</script>
                 </div>
+   
      </header>
 
       <div class="text">
