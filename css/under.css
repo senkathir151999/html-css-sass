@@ -112,7 +112,6 @@ nav a {
   text-align: center;
   letter-spacing: 0.2px;
   color: white;
-  /* Inside Auto Layout */
   text-decoration: none;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
