@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/css/under.css" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body>
     
@@ -36,8 +37,8 @@
            
             <div class="header-form">
     
-                <input type="text"  name="fname" placeholder="Your Email"></input>
-                <a class="link" href="#"><button>Subscribe</button> </a>
+                <input id="input-1" type="text"  name="fname" placeholder="Your Email" ></input>
+                <a class="link" href="#"><button type="submit" onclick="validate();">Subscribe</button> </a>
                 </div>
                 <div class="login">
                     <button><a href="#">Login</a></button>
@@ -50,12 +51,7 @@
                        <span class="bars-3">
                     </span>
                     
-                    	<script>
-		function toggleMobileMenu(){
-			document.querySelector('#menu').classList.toggle('active')
-			document.querySelector('.toggle').classList.toggle('active')
-		}
-	</script>
+                    	
                 </div>
    
      </header>
@@ -142,8 +138,8 @@
     <h3>Avialable exclusively fimaland</h3>
     <div class="form">
         <label type="text"> </label>
-        <input type="text" placeholder="Your Email">
-        <button>Subscribe</button>
+        <input id="input-2" type="text" placeholder="Your Email">
+        <button onclick="validate2();">Subscribe</button>
     </div>
         </div>
     
@@ -364,14 +360,14 @@
             <div class="content-feedback">
                 <div class="content-form">
                     <h1>Contact us</h1>
+                <label  type="text"> </label>
+                 <input id="input-3" type="text" placeholder="Your Name">
                 <label type="text"> </label>
-                 <input type="text" placeholder="Your Name">
-                <label type="text"> </label>
-                 <input type="text" placeholder="Your Email">
+                 <input  id="input-4" type="text" placeholder="Your Email">
                 </form>
-                 <input class="description" placeholder="Your Message" >  </input>
+                 <input  class="description" placeholder="Your Message" >  </input>
                 </div>
-                <button class="content-form-btn">Send</button>
+                <button onclick="validate3();" class="content-form-btn">Send</button>
                 
             </div>
             </section>
@@ -414,8 +410,8 @@
                             <h2>Avialable exclusivery on Figmaland</h2>
                         </div>
                         <div class="flex-input-4">
-                            <input type="text" placeholder="Your Email">
-                            <button>Subscribe</button>
+                            <input id="input-6" type="text" placeholder="Your Email">
+                            <button onclick="validate4();">Subscribe</button>
                         </div>
                 
                         
